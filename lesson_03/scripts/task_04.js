@@ -11,8 +11,8 @@ const agePensionerMax = 150
 
 //1.  Знаходимо і виводимо результат
 if (agePerson <= ageChildMax) document.write(`Ви дитина в садочку.`)
-else if (ageChildMax < agePerson && agePerson <= ageSchoolChildMax) document.write(`Ви школяр.`)
-else if (ageSchoolChildMax < agePerson && agePerson <= ageStudentMax) document.write(`Ви студент.`)
-else if (ageStudentMax < agePerson && agePerson <= ageWorkerdMax) document.write(`Ви працівник.`)
-else if (ageWorkerdMax < agePerson && agePerson <= agePensionerMax) document.write(`Ви пенсіонер.`)
+else if (agePerson <= ageSchoolChildMax) document.write(`Ви школяр.`)
+else if (agePerson <= ageStudentMax) document.write(`Ви студент.`)
+else if (agePerson <= ageWorkerdMax) document.write(`Ви працівник.`)
+else if (agePerson <= agePensionerMax) document.write(`Ви пенсіонер.`)
 else document.write(`На жаль Вас вже немає з нами(.`)
