@@ -8,7 +8,11 @@ if (confirm('Почати тестування?')) {
 	let countOfShells = 10
 
 	function generNullTable(rowsNum, colsNum) {
-		let table = new Array(rowsNum).fill(0).map(() => new Array(colsNum).fill(0))
+		let table = []
+		for (let rowInd = 0; rowInd < rowsNum; rowInd++) {
+			let newRow = new Array(colsNum).fill(0)
+			table.push(newRow)
+		}
 		return table
 	}
 	const nullTable = generNullTable(rows, columns)
@@ -48,17 +52,7 @@ if (confirm('Почати тестування?')) {
 }
 
 
-// function generNullTable(rowsNum, colsNum) {
-// 	let table = [];
-// 	for (let rowInd = 0; rowInd < rowsNum; rowInd++) {
-// 		table.push([]); // Добавляем новую строку
-// 		for (let colInd = 0; colInd < colsNum; colInd++) {
-// 			table[rowInd][colInd] = 0; // Заполняем нулями
-// 		}
-// 	}
-// 	return table;
-// }
-// console.log(generNullTable(6, 6)); 
+// let table = new Array(rowsNum).fill(0).map(() => new Array(colsNum).fill(0))
 
 
 
