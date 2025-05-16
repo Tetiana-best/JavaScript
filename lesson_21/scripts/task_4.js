@@ -63,6 +63,7 @@ if (confirm('Почати тестування?')) {
 			super(x, y, imagePath, updateInterval)
 		}
 		move() {
+			super.move()
 			setInterval(() => {
 				this.y += Math.floor(Math.random() * 500) - 200
 				if (this.y > window.innerHeight - 250 || this.y < 0) this.y = window.innerHeight - 250
@@ -72,5 +73,5 @@ if (confirm('Почати тестування?')) {
 		}
 	}
 	const Bird1 = new Bird(Math.random() * 1000 + 500, Math.random() * 1000 + 500, "../img/bird.png", 1)
-	Bird1.render('body').move().move()
+	Bird1.render('body').move()
 }
